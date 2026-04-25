@@ -94,32 +94,35 @@ Once the analysis is complete:
 The system displays the time taken for each mode:
 
 ![Terminal Output](images/terminal.png)
+_<p align="center">Figure 1.1 Terminal Output</p>_
 
-- Sequential: ~148.06s  
-- Concurrent: ~34.51s  
-- Parallel: ~33.69s  
+- Sequential: ~136.4758s  
+- Concurrent: ~29.1252s  
+- Parallel: ~28.3052s
+- Speedup Ratio between Parallel and Sequential: ~4.82x Faster 
 
 ---
 
 ### 📄 Input File (`input.txt`)
 Contains 3,000,000 generated movie rating records including:
-
-![Input File](images/input.png)
-
 - Movie title  
 - Rating  
+
+![Input File](images/input.png)
+_<p align="center">Figure 1.2 input.txt</p>_
 
 ---
 
 ### 📄 Output File (`output.txt`)
 Contains:
-
-![Output File](images/output.png)
-
 - Top 100 ranked movies  
 - Genre classification  
-- Average rating scores  
+- Average rating scores 
 
+![Output File](images/output.png)
+_<p align="center">Figure 1.3 output.txt</p>_
+
+ 
 ---
 
 ### 📈 Visual Output
@@ -127,9 +130,10 @@ A bar chart titled:
 
 **"Performance Comparison: Processing 3,000,000 Records"**
 
-Saved as `BenchmarkResults.png`
+Saved as `BenchmarkResults.png
 
-![Performance Chart](images/chart.png)
+![Performance Chart](images/BenchmarkResults.png)
+_<p align="center">Figure 1.4 input.txt</p>_
 
 ## 💻 Source Code
 
