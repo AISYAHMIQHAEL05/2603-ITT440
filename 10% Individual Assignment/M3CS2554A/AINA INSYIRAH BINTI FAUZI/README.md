@@ -198,11 +198,13 @@ if __name__ == "__main__":
     multiprocessing_orders(orders)
 ```
 # 💻 Code Explanation
-- **process_order(order_id)** : This function simulates an order process (payment, packaging, delivery) using time.sleep(1) to represent processing time.
-- **sequential_orders(orders)** : Process orders one by one using a loop. It records the total execution time, which is slower because tasks are done sequentially.
-- **threading_orders(orders)** : Use threading to process multiple orders at the same time. Each order runs in a separate thread and making the process faster.
-- **multiprocessing_orders(orders)** : Use multiprocessing to run separate process, improving performance.
-- **multiprocessing.Pool()** : Distributes tasks across multiple processes.
+-**Payment & delivery classes** : Define different types of payment (QR, Online Banking, Card) and delivery (COD, Standard, Express) each with its own processing time.
+-**Order(order_id)** : Represent a single order and randomly assign a payment method and delivery type.
+- **process_order(order)** : Executes payment, packaging and delivery process for each order and return the result.
+- **sequential_orders(orders)** : Process all orders one by one without parallel execution.
+- **threading_orders(orders)** : Use ThreadPoolExecutor to process multiple orders concurrently using threads.
+- **multiprocessing_orders(orders)** : Use multiprocessing to execute orders in parallel for better performance.
+- **time.sleep()** : Simulates real-world delay such as system processing or network operations.
 - **time.time()** : Use to measure execution time for comparison.
 
 # Results & Output
@@ -223,3 +225,6 @@ if __name__ == "__main__":
 
 # Conclusion
 Sequential processing performed the slowest because each task is executed one by one and includes waiting time from simulated operations. This causes the total execution time to increase significantly. Threading performed better by handling multiple tasks concurrently, reducing waiting time. Multiprocessing also improved performance by executing tasks in parallel across multiple process. This shows that parallel processing is more efficient for I/O-bound tasks, and the choice of method depends on the nature of the workload.
+
+# Youtube Link
+https://youtu.be/u3jTQMmNQjE?feature=shared
