@@ -157,6 +157,7 @@ The system is implemented in Python and includes:
 <img width="837" height="405" alt="sc5" src="https://github.com/user-attachments/assets/8c707aae-7580-4474-a00f-f491e4644279" />
 <img width="834" height="405" alt="sc6" src="https://github.com/user-attachments/assets/b7d81687-d79f-4507-80a6-fdea9aec6a9f" />
 <img width="834" height="393" alt="sc7" src="https://github.com/user-attachments/assets/578d4afa-5257-4583-b911-795e96af44d2" />
+<p align="center"><i>Figure 2.1 Source Code</i></p>
 
 ---
 
